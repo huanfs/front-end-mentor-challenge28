@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from "react"
 import './App.css'
+/*data.json*/
+import data from "../public/data.json";
 /*components*/
 import Profile_card from "./components/profile_card.jsx";
 import Stats_card from "./components/stats_card.jsx";
@@ -23,10 +25,7 @@ function App() {
     setPeriod(target.innerHTML);
   }
   useEffect(() => {
-    fetch(process.env.PUBLIC_URL + '/data.json')
-      .then(response => response.json())
-      .then(data => { setResults(data)})
-      .catch(() => console.log("erro inesperado, tente novamente"));
+    setResults(data.json());
   }, []);
   return (
     <>
