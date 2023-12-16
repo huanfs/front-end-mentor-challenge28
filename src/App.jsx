@@ -14,9 +14,6 @@ function App() {
   const[results, setResults] = useState();
   /*states for ammounts*/
   const[period,setPeriod] = useState("daily");
-  const[daily, setDaily] = useState();
-  const[weekly, setWeekly] = useState();
-  const[monthly, setMonthly] = useState();
   /*const with respectively: colors and images*/
   const colors = ["var(--LightOrange", "var(--SoftBlue", 
   "var(--LightRed)","var(--LimeGreen)","var(--Violet)","var(--SoftOrange)"]
