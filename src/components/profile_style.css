@@ -1,0 +1,107 @@
+@media screen and (max-width: 505px) {
+  .profile {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .profile .myProfile {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    gap: 1em;
+    border-radius: 10px;
+    background-color: var(--Blue);
+    position: relative;
+    z-index: 10;
+  }
+  .profile .myProfile img {
+    max-width: 90px;
+    border-radius: 50%;
+    border: 3px solid var(--White);
+  }
+  .profile .myProfile .informations {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    color: var(--White);
+  }
+  .profile .myProfile .informations h1 {
+    font-size: 1.5em;
+  }
+  .profile .profileInfos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2em 0 1em 0;
+    background-color: var(--DarkBlue);
+    border-radius: 10px;
+    position: relative;
+    top: -1em;
+    z-index: 0;
+  }
+  .profile .profileInfos p {
+    font-weight: 500;
+    color: var(--PaleBlue);
+  }
+  .profile .profileInfos p:hover, .profile .profileInfos p:focus {
+    cursor: pointer;
+    color: var(--White);
+  }
+}
+@media screen and (min-width: 506px) {
+  .profile {
+    width: 40%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .profile .myProfile {
+    height: 70%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1em;
+    gap: 1em;
+    border-radius: 10px;
+    background-color: var(--Blue);
+    position: relative;
+    z-index: 10;
+  }
+  .profile .myProfile img {
+    max-width: 90px;
+    border-radius: 50%;
+    border: 3px solid var(--White);
+  }
+  .profile .myProfile .informations {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    color: var(--White);
+  }
+  .profile .myProfile .informations h1 {
+    font-weight: 300;
+    font-size: 3em;
+  }
+  .profile .profileInfos {
+    height: 34%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2em 0 1em 0;
+    background-color: var(--DarkBlue);
+    border-radius: 10px;
+    position: relative;
+    top: -1em;
+    z-index: 0;
+  }
+  .profile .profileInfos p {
+    text-indent: 2em;
+    font-weight: 500;
+    color: var(--PaleBlue);
+  }
+  .profile .profileInfos p:hover, .profile .profileInfos p:focus {
+    cursor: pointer;
+    color: var(--White);
+  }
+}
+
+/*# sourceMappingURL=profile_style.css.map */

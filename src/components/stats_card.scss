@@ -1,48 +1,123 @@
-.stats{
-    width:100%;
-    border-radius:10px;
-    overflow:hidden;
-    .bg{
-        border-radius:10px;
-        display:flex;
-        align-items:center;
-        justify-content:flex-end;
-        position:relative;
-        z-index:0;
-        img{
-            height:60px;
-            max-width:60px;
-            position:relative;
-            top:-0.3em;
-        }
-    }
-    .data{
-        display:flex;
-        align-items:center;
-        gap:0.5em;
-        flex-direction:column;
-        justify-content:space-between;
-        padding:1em;
-        background-color:var(--DarkBlue);
-        border-radius:10px;
-        position:relative;
-        top:-2em;
-        .action, .time{
+@media screen and (max-width:505px){
+    div{
+        width:100%;
+        .stats{
             width:100%;
-            display:flex;
-            flex-direction:row;
-            align-items:center;
-            gap:0.5em;
-            justify-content:space-between;
-            color:var(--PaleBlue);
-        }
-        .time{
-            span{
-                margin:0 5px;
+            border-radius:10px;
+            overflow:hidden;
+            .bg{
+                border-radius:10px;
+                display:flex;
+                align-items:center;
+                justify-content:flex-end;
+                position:relative;
+                z-index:0;
+                img{
+                    height:60px;
+                    max-width:60px;
+                    position:relative;
+                    top:-0.3em;
+                }
+            }
+            .data{
+                display:flex;
+                align-items:center;
+                gap:0.5em;
+                flex-direction:column;
+                justify-content:space-between;
+                padding:1em;
+                background-color:var(--DarkBlue);
+                border-radius:10px;
+                position:relative;
+                top:-2em;
+                .action, .time{
+                    width:100%;
+                    display:flex;
+                    flex-direction:row;
+                    align-items:center;
+                    gap:0.5em;
+                    justify-content:space-between;
+                    color:var(--PaleBlue);
+                }
+                .time{
+                    span{
+                        margin:0 5px;
+                    }
+                }
+                .action img:hover{
+                    cursor:pointer;
+                }
             }
         }
-        .action img:hover{
-            cursor:pointer;
+    }
+}
+
+@media screen and (min-width:506px){
+    div{
+        width:100%;
+        height:100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap:1em;
+        .stats{
+            width:100%;
+            height:100%;
+            border-radius:10px;
+            overflow:hidden;
+            .bg{
+                border-radius:10px;
+                display:flex;
+                align-items:center;
+                justify-content:flex-end;
+                position:relative;
+                z-index:0;
+                img{
+                    height:60px;
+                    max-width:60px;
+                    position:relative;
+                    top:-0.3em;
+                }
+            }
+            .data{
+                height:90%;
+                display:flex;
+                align-items:center;
+                gap:0.5em;
+                flex-direction:column;
+                justify-content:space-between;
+                padding:1em;
+                background-color:var(--DarkBlue);
+                border-radius:10px;
+                position:relative;
+                top:-2em;
+                .action, .time{
+                    width:100%;
+                    display:flex;
+                    flex-direction:row;
+                    align-items:center;
+                    gap:0.5em;
+                    justify-content:space-between;
+                    color:var(--PaleBlue);
+                }
+                .time{
+                    display:flex;
+                    flex-direction:column;
+                    align-items:flex-start;
+                    h2{
+                        font-size:3em;
+                        font-weight:300;
+                    }
+                    p{
+                        span{
+                            margin:0 5px;
+                        }
+                    }
+                }
+                .action img:hover{
+                    cursor:pointer;
+                }
+            }
         }
     }
 }

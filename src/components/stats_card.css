@@ -1,0 +1,120 @@
+@media screen and (max-width: 505px) {
+  div {
+    width: 100%;
+  }
+  div .stats {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  div .stats .bg {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 0;
+  }
+  div .stats .bg img {
+    height: 60px;
+    max-width: 60px;
+    position: relative;
+    top: -0.3em;
+  }
+  div .stats .data {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: var(--DarkBlue);
+    border-radius: 10px;
+    position: relative;
+    top: -2em;
+  }
+  div .stats .data .action, div .stats .data .time {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5em;
+    justify-content: space-between;
+    color: var(--PaleBlue);
+  }
+  div .stats .data .time span {
+    margin: 0 5px;
+  }
+  div .stats .data .action img:hover {
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 506px) {
+  div {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1em;
+  }
+  div .stats {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  div .stats .bg {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 0;
+  }
+  div .stats .bg img {
+    height: 60px;
+    max-width: 60px;
+    position: relative;
+    top: -0.3em;
+  }
+  div .stats .data {
+    height: 90%;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: var(--DarkBlue);
+    border-radius: 10px;
+    position: relative;
+    top: -2em;
+  }
+  div .stats .data .action, div .stats .data .time {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5em;
+    justify-content: space-between;
+    color: var(--PaleBlue);
+  }
+  div .stats .data .time {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  div .stats .data .time h2 {
+    font-size: 3em;
+    font-weight: 300;
+  }
+  div .stats .data .time p span {
+    margin: 0 5px;
+  }
+  div .stats .data .action img:hover {
+    cursor: pointer;
+  }
+}
+
+/*# sourceMappingURL=stats_card.css.map */

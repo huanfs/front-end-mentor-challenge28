@@ -1,11 +1,11 @@
 
 import ellipsis from "../assets/images/icon-ellipsis.svg";
 
-import "./stats_card.scss";
+import "./stats_card.css";
 
 const Stats_card = ({data, img, color, period}) => {
     return(
-        <>
+        <div>
             {data && data.map((i, index)=>{
                 return(
                 <section className="stats" key={index}>
@@ -33,16 +33,16 @@ const Stats_card = ({data, img, color, period}) => {
                                 Last
                                 {period=="daily" && (
                                     <>
-                                    <span>{data[index].timeframes.daily.previous}</span>
-                                    days
+                                    <span>days - </span>
+                                    {`${data[index].timeframes.daily.previous} hrs`}
                                     </>
                                 )}
 
 
                                 {period=="weekly" && (
                                      <>
-                                     <span>{data[index].timeframes.weekly.previous}</span>
-                                     weeks
+                                     <span>weeks - </span>
+                                     {`${data[index].timeframes.weekly.previous}`}
                                      </>
                                 )}
 
@@ -50,8 +50,8 @@ const Stats_card = ({data, img, color, period}) => {
 
                                 {period=="monthly" && (
                                     <>
-                                    <span>{data[index].timeframes.monthly.previous}</span>
-                                    months
+                                    <span>months - </span>
+                                    {`${data[index].timeframes.monthly.previous}`}
                                     </>
                                 )}
                             </p>
@@ -60,7 +60,7 @@ const Stats_card = ({data, img, color, period}) => {
                 </section>
                 )
             })}
-        </>
+        </div>
     )
 }
 

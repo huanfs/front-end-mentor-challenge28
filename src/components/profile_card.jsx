@@ -1,5 +1,5 @@
 import profile_picture from "../assets/images/image-jeremy.png";
-import "./profile_style.scss";
+import "./profile_style.css";
 const Profile_card = (props) => {
     return(
         <section className="profile">

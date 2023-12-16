@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react"
-import './App.scss'
+import './App.css'
 /*components*/
 import Profile_card from "./components/profile_card.jsx";
 import Stats_card from "./components/stats_card.jsx";
@@ -39,12 +39,6 @@ function App() {
   return (
     <>
      <Profile_card action={changePeriod}/>
-     {/* <Stats_card data={results} img={icon_work} action="work" color="var(--LightOrange)"/>
-     <Stats_card data={results} img={icon_play} action="play" color="var(--SoftBlue)"/>
-     <Stats_card data={results} img={icon_study} action="study" color="var(--LightRed)"/>
-     <Stats_card data={results} img={icon_exercise} action="exercise" color="var(--LimeGreen)"/>
-     <Stats_card data={results} img={icon_social} action="social" color="var(--Violet)"/>
-     <Stats_card data={results} img={icon_self_care} action="self care" color="var(--SoftOrange)"/> */}
      <Stats_card data={results} img={imgs} color={colors} period={period} change={setPeriod} />
     </>
   )
