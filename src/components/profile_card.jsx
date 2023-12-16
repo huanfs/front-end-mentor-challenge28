@@ -11,9 +11,9 @@ const Profile_card = (props) => {
                 </div>
             </article>
             <article className="profileInfos">
-                <p>daily</p>
-                <p>weekly</p>
-                <p>monthly</p>
+                <p onClick={props.action}>daily</p>
+                <p onClick={props.action}>weekly</p>
+                <p onClick={props.action}>monthly</p>
             </article>
         </section>
     )

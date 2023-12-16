@@ -36,6 +36,11 @@
             justify-content:space-between;
             color:var(--PaleBlue);
         }
+        .time{
+            span{
+                margin:0 5px;
+            }
+        }
         .action img:hover{
             cursor:pointer;
         }
