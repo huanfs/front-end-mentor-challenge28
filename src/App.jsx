@@ -27,10 +27,9 @@ function App() {
         fetch("src/assets/data.json")
         .then(response=>response.json())
         .then(data=>{setResults(data); console.log(data)})
-        .catch(err=>console.log(`Deu erro : ${err}`))
     }
     catch{
-        console.log("biscoito")
+        console.log("erro inesperado, tente novamente")
     }
   },[])
   return (
