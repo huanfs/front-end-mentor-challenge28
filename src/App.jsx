@@ -22,16 +22,12 @@ function App() {
   function changePeriod({target}){
     setPeriod(target.innerHTML);
   }
-  useEffect(()=>{
-    try{
-        fetch("./data.json")
-        .then(response=>response.json())
-        .then(data=>{setResults(data); console.log(data)})
-    }
-    catch{
-        console.log("erro inesperado, tente novamente")
-    }
-  },[])
+  useEffect(() => {
+    fetch(process.env.PUBLIC_URL + '/data.json')
+      .then(response => response.json())
+      .then(data => { setResults(data)})
+      .catch(() => console.log("erro inesperado, tente novamente"));
+  }, []);
   return (
     <>
      <Profile_card action={changePeriod}/>
