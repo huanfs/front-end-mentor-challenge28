@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from "react"
 import './App.css'
+/*data*/
+import data from "./assets/data.json";
 /*components*/
 import Profile_card from "./components/profile_card.jsx";
 import Stats_card from "./components/stats_card.jsx";
@@ -24,12 +26,11 @@ function App() {
   }
   useEffect(()=>{
     try{
-        fetch("./assets/data.json")
-        .then(response=>response.json())
-        .then(data=>{setResults(data); console.log(data)})
+        const response = data;
+        response?setResults(response):null
     }
-    catch{
-        console.log("erro inesperado, tente novamente")
+    catch(err){
+        console.log("erro inesperado, tente novamente" + err)
     }
   },[])
   return (
