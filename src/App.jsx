@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react"
 import './App.css'
 /*data.json*/
-import data from "../public/data.json";
+import data from "./data.json";
 /*components*/
 import Profile_card from "./components/profile_card.jsx";
 import Stats_card from "./components/stats_card.jsx";
@@ -25,7 +25,7 @@ function App() {
     setPeriod(target.innerHTML);
   }
   useEffect(() => {
-    setResults(data.json());
+    setResults(data);
   }, []);
   return (
     <>
