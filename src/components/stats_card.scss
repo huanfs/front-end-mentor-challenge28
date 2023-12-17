@@ -17,6 +17,7 @@
                     max-width:60px;
                     position:relative;
                     top:-0.3em;
+                    right:0.5em;
                 }
             }
             .data{
@@ -39,7 +40,13 @@
                     justify-content:space-between;
                     color:var(--PaleBlue);
                 }
+                .action{
+                    h3{
+                        font-weight:300;
+                    }
+                }
                 .time{
+                    gap:0;
                     span{
                         margin:0 5px;
                     }
