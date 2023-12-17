@@ -6,4 +6,4 @@
 * otherwhise, in mobile screens both *Profile_card* and *Stats_card* is inside os #root directly, and this #root have `display:flex; flex-direction:column` to align the *Stats_card* one of top of the other
 ---
 ### code operation
-* in this project we have 2 components  *Profile_card* and *Stats_card* responsible for a profile component with a ~~profile image~~, ~~profile name and job~~, and one div with 3 *P* tags responsible for starts a function `changePeriod()` storing the target item `innerHTML` of function in a state. Depending on the value, shows the informations from ~~daily, weekly or monthly~~ ammount
+* in this project we have 2 components  *Profile_card* and *Stats_card* responsible for a profile component with a *profile image*, *profile name and job*, and one div with 3 *P* tags responsible for starts a function `changePeriod()` storing the target item `innerHTML` of function in a state. Depending on the value, shows the informations from *daily, weekly or monthly* ammount
